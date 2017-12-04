@@ -5,83 +5,126 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="/css/newsfeed.css" rel="stylesheet">
+    <link href="css/newsfeed.css" rel="stylesheet">
 </head>
 <body>
-<div id="fb-root"></div>
-<script>
-  (function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = 'https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.11';
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
 <ul class="news-feed">
-    <li class="news-feed__item">
-        <h1 class="news-feed__title">Image full</h1>
-        <div class="news-feed__media">
-            <img class="news-feed__img" src="https://scontent-arn2-1.xx.fbcdn.net/v/t31.0-8/23916408_1583600815011549_6232179678041833810_o.jpg?oh=e7ecf38a1c08c05b2c27bd2d1426c89c&oe=5A8E077F&dl=1">
-        </div>
-        <p class="news-feed__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae blanditiis culpa hic quidem rem</p>
-        <div class="news-feed__button cta-pair cta-pair--centered"><a class="cta-pair__button cta-pair__button cta-pair__button--tertiary cta-pair__button--gray">View experiment</a></div>
-    </li>
+    <!-- <div class="news-feed__button cta-pair cta-pair--centered"><a class="cta-pair__button cta-pair__button cta-pair__button--tertiary cta-pair__button--gray">View experiment</a></div> -->
+
     <li class="news-feed__item">
         <div class="news-feed__media">
-            <img class="news-feed__img" src="https://scontent-arn2-1.xx.fbcdn.net/v/t31.0-8/23275772_1565334910171473_6149051027953660657_o.jpg?oh=1c676d4d977e8364771c6c3e50a90dd8&oe=5A8A3C0B&dl=1">
-        </div>
-        <p class="news-feed__description">Image with description and button. Beatae blanditiis culpa hic quidem rem</p>
-        <div class="news-feed__button cta-pair cta-pair--centered"><a class="cta-pair__button cta-pair__button cta-pair__button--tertiary cta-pair__button--gray">View experiment</a></div>
-    </li>
-    <li class="news-feed__item">
-        <div class="news-feed__media">
-            <img class="news-feed__img" src="https://scontent-arn2-1.xx.fbcdn.net/v/t31.0-8/22712288_1554579101247054_6744404453595826558_o.jpg?oh=5546ed2d9c0f4429f4d89f9cac2289bb&oe=5A956594&dl=1">
-        </div>
-        <p class="news-feed__description">Image with description</p>
-    </li>
-    <li class="news-feed__item">
-        <div class="news-feed__media">
-            <img class="news-feed__img" src="https://scontent-arn2-1.xx.fbcdn.net/v/t31.0-8/22829939_1555343301170634_2753824893404911301_o.jpg?oh=67fc8eabb9caad3f9b6f7f8f6f86e6ab&oe=5A9A922D&dl=1">
+            <img class="news-feed__img" src="image/201712031156.jpg">
         </div>
     </li>
-    <!-- Video -->
-    <li class="news-feed__item">
-        <h1 class="news-feed__title">Video from Facebook</h1>
-        <div class="news-feed__media">
-            <div class="fb-video news-feed__video" data-href="https://www.facebook.com/melscience/videos/1565717880133176/" data-show-text="false" data-allowfullscreen="true" data-controls="false"></div>
-        </div>
-        <p class="news-feed__description">Facebook video sucks, first of all - logo/header, secondly autoplay runs in full screen</p>
-        <div class="news-feed__button cta-pair cta-pair--centered"><a class="cta-pair__button cta-pair__button cta-pair__button--tertiary cta-pair__button--gray">View experiment</a></div>
-    </li>
+
     <li class="news-feed__item">
         <div class="news-feed__media">
-            <video class="news-feed__video" loop="true" autoplay="true" muted="true" webkit-playsinline="true" playsinline="true" poster="https://res.cloudinary.com/mel-science/video/upload/fl_progressive:steep,w_290/v1/coubs/20sec1.jpg">
-                <source data-src="https://res.cloudinary.com/mel-science/video/upload/ac_none,w_290/v1/coubs/20sec1.webm" type="video/webm" src="https://res.cloudinary.com/mel-science/video/upload/ac_none,w_290/v1/coubs/20sec1.webm">
-                <source data-src="https://res.cloudinary.com/mel-science/video/upload/ac_none,w_290/v1/coubs/20sec1.mp4" type="video/mp4" src="https://res.cloudinary.com/mel-science/video/upload/ac_none,w_290/v1/coubs/20sec1.mp4">
-                <img src="https://res.cloudinary.com/mel-science/video/upload/fl_progressive:steep,w_290/v1/coubs/20sec1.jpg">
+            <video class="news-feed__video" loop autoplay muted webkit-playsinline playsinline controls>
+                <source src="video/201712031017.mp4" type="video/mp4">
             </video>
         </div>
-        <p class="news-feed__description">Video via html video tag works much more correctly</p>
-        <div class="news-feed__button cta-pair cta-pair--centered"><a class="cta-pair__button cta-pair__button cta-pair__button--tertiary cta-pair__button--gray">View experiment</a></div>
+        <p class="news-feed__description">
+            So you still think chemistry is boring?<br>
+            This experiment is performed by professional just to show you the beauty of chemistry and is not included in the MEL Chemistry subscription.
+        </p>
     </li>
+
     <li class="news-feed__item">
         <div class="news-feed__media">
-            <video class="news-feed__video" loop="true" autoplay="true" muted="true" webkit-playsinline="true" playsinline="true" controls="true" poster="https://res.cloudinary.com/mel-science/video/upload/fl_progressive:steep,so_0,w_300/v1/landing/expvideos/exp5_v2.jpg">
-                <source data-src="https://res.cloudinary.com/mel-science/video/upload/ac_none,w_300/v1/landing/expvideos/exp5_v2.webm" data-src-x2="https://res.cloudinary.com/mel-science/video/upload/ac_none,q_60,w_600/v1/landing/expvideos/exp5_v2.webm" type="video/webm" src="https://res.cloudinary.com/mel-science/video/upload/ac_none,w_300/v1/landing/expvideos/exp5_v2.webm">
-                <source data-src="https://res.cloudinary.com/mel-science/video/upload/ac_none,w_300/v1/landing/expvideos/exp5_v2.mp4" data-src-x2="https://res.cloudinary.com/mel-science/video/upload/ac_none,q_60,w_600/v1/landing/expvideos/exp5_v2.mp4" type="video/mp4" src="https://res.cloudinary.com/mel-science/video/upload/ac_none,w_300/v1/landing/expvideos/exp5_v2.mp4">
-                <img src="https://res.cloudinary.com/mel-science/video/upload/fl_progressive:steep,so_0,w_300/v1/landing/expvideos/exp5_v2.jpg">
+            <img class="news-feed__img" src="image/201712021130.jpg">
+        </div>
+    </li>
+
+    <li class="news-feed__item">
+        <div class="news-feed__media">
+            <video class="news-feed__video" loop autoplay muted webkit-playsinline playsinline controls>
+                <source src="video/201712021012.mp4" type="video/mp4">
             </video>
         </div>
-        <p class="news-feed__description">Video with enabled controls</p>
+        <p class="news-feed__description">
+            This stunning liquid stays blue to make you happy 💙
+        </p>
     </li>
+
     <li class="news-feed__item">
         <div class="news-feed__media">
-            <video class="news-feed__video" loop="true" autoplay="true" muted="true" webkit-playsinline="true" playsinline="true" poster="https://res.cloudinary.com/mel-science/video/upload/fl_progressive:steep,so_0,w_300/v1/landing/expvideos/exp2.jpg">
-                <source data-src="https://res.cloudinary.com/mel-science/video/upload/ac_none,w_300/v1/landing/expvideos/exp2.webm" data-src-x2="https://res.cloudinary.com/mel-science/video/upload/ac_none,q_60,w_600/v1/landing/expvideos/exp2.webm" type="video/webm" src="https://res.cloudinary.com/mel-science/video/upload/ac_none,w_300/v1/landing/expvideos/exp2.webm">
-                <source data-src="https://res.cloudinary.com/mel-science/video/upload/ac_none,w_300/v1/landing/expvideos/exp2.mp4" data-src-x2="https://res.cloudinary.com/mel-science/video/upload/ac_none,q_60,w_600/v1/landing/expvideos/exp2.mp4" type="video/mp4" src="https://res.cloudinary.com/mel-science/video/upload/ac_none,w_300/v1/landing/expvideos/exp2.mp4">
-                <img src="https://res.cloudinary.com/mel-science/video/upload/fl_progressive:steep,so_0,w_300/v1/landing/expvideos/exp2.jpg">
+            <img class="news-feed__img" src="image/201712011257.jpg">
+        </div>
+    </li>
+
+    <li class="news-feed__item">
+        <div class="news-feed__media">
+            <video class="news-feed__video" loop autoplay muted webkit-playsinline playsinline controls>
+                <source src="video/201712011210.mp4" type="video/mp4">
             </video>
+        </div>
+        <p class="news-feed__description">
+            Much more useful than using it for making chips 😉
+        </p>
+    </li>
+
+    <li class="news-feed__item">
+        <div class="news-feed__media">
+            <video class="news-feed__video" loop autoplay muted webkit-playsinline playsinline controls>
+                <source src="video/201711301230.mp4" type="video/mp4">
+            </video>
+        </div>
+        <p class="news-feed__description">
+            Oh please, they are just poor gummy bears!<br>
+            This experiment is not included in the MEL Chemistry subscription and is recommended to be conducted only by professionals. We just love to show the beauty of chemistry.
+        </p>
+    </li>
+
+    <li class="news-feed__item">
+        <div class="news-feed__media">
+            <video class="news-feed__video" loop autoplay muted webkit-playsinline playsinline controls>
+                <source src="video/201711301021.mp4" type="video/mp4">
+            </video>
+        </div>
+        <p class="news-feed__description">
+            This month we made lots of discoveries — we hope you enjoyed it!<br>
+            Watch our new Awesome Experiments Compilation
+        </p>
+    </li>
+
+    <li class="news-feed__item">
+        <div class="news-feed__media">
+            <img class="news-feed__img" src="image/201711291147.jpg">
+        </div>
+    </li>
+
+    <li class="news-feed__item">
+        <div class="news-feed__media">
+            <video class="news-feed__video" loop autoplay muted webkit-playsinline playsinline controls>
+                <source src="video/201711281243.mp4" type="video/mp4">
+            </video>
+        </div>
+        <p class="news-feed__description">
+            Lanthanum: a metal from hybrid cars and optical fiber
+        </p>
+    </li>
+
+    <li class="news-feed__item">
+        <div class="news-feed__media">
+            <img class="news-feed__img" src="image/201711281159.jpg">
+        </div>
+    </li>
+
+    <li class="news-feed__item">
+        <div class="news-feed__media">
+            <video class="news-feed__video" loop autoplay muted webkit-playsinline playsinline controls>
+                <source src="video/201711281007.mp4" type="video/mp4">
+            </video>
+        </div>
+        <p class="news-feed__description">
+            So simple! Best tricks are based on science 😉 <br>
+            This experiment is performed by professional just to show you the beauty of science and is not included in the MEL Chemistry subscription.
+        </p>
+    </li>
+
+    <li class="news-feed__item">
+        <div class="news-feed__media">
+            <img class="news-feed__img" src="image/201711271143.png">
         </div>
     </li>
 </ul>
